@@ -1,0 +1,130 @@
+#1 st Program
+#1. Write a Python program to find those numbers which are divisible by 7
+#and multiple of 5, between 1500 and 2700 (both included).
+
+'''num=[]
+for i in range(1500,2701):
+    if (i%7==0) and (i%5==0):
+        num.append(i)
+print(num) 
+'''
+
+# 2 nd program
+#Python program to add two numbers
+
+'''a=int(input("Enter the first number:"))
+b=int(input("Enter the second number:"))
+def add():
+    return a+b
+print(add())
+'''
+# 3rd program
+#Maximum of two numbers in Python
+'''
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+if a==b:
+    print("both numbers are same")
+elif a>b:
+    print(a," is the Maximum Number")
+else:
+    print(b," is the maximum number")
+'''
+# 4th program
+#Python Program for factorial of a number
+n=int(input("enter the number :"))
+if n<=-1:
+    print("enter valid number")
+elif n==0 or n==1:
+    print("factorial of the number is 1")
+else :
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+print("factorial of {} is {}".format(n,fact))     
+
+   5th program
+# find program to simple interest
+
+p=int(input("enter the principal amount : "))
+t=int(input("enter the tenure : "))
+r=int(input("enter the interest rate : "))
+if p<=0 or t<=0 or r<=0:
+    print("enter the valid numbers")
+elif p>1:
+    si=(p*t*r)/100
+print("simple interest for above values is {}".format(si))    
+
+# 6 th program
+# find compound interest program
+p=int(input("enter the principal amount : "))
+t=int(input("enter the tenure : "))
+r=int(input("enter the interest rate : "))
+
+if p<=0 or t<=0 or r<=0:
+    print("enter the valid numbers")
+elif p>1:
+    amount=p*(pow(1+(r/100),t))
+    comp_int=amount-p
+    
+    print("compound interest for above values is {}".format(comp_int))    
+
+
+# 7th program
+# check the number is armstrong number or not
+
+n=int(input('enter the number : '))
+sum=0
+if n<=0:
+    print("enter valid number")
+tostr=str(n)    
+for i in tostr:
+    sum=sum+int(i)*int(i)*int(i)
+    
+if (sum==n):
+    print("given number {} is armstrong number".format(n))
+else:
+    print("given number is not armstrong")
+
+#8th program
+find area of circle
+
+r=int(input('enter the radius of circle : '))
+area=3.14*r**2
+print("the area of circle is {}".format(area))
+
+#9 th program
+program to print all the prime numbers in a range
+
+n=int(input("enter the number : "))
+prime_numbers=[]
+if n<=0:
+    print("enter valid number")
+else:
+    for i in range(2,n+1):
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            prime_numbers.append(i)
+print("all the prime numbers in range of {} are {} ".format(n,prime_numbers))  
+
+#10th program 
+#find the number is prime or not
+
+n=int(input("enter the number : "))
+if n<=0:
+    print("enter valid number")
+else:
+    for i in range(2,n):
+        if n%i==0:
+            print("the number is not prime number")
+            break
+    else:
+        print("the given number is prime number")        
+
+ 
+
+    
+
+
